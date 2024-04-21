@@ -17,7 +17,7 @@ locals {
 # create a security group and ssh keypair that gives access to the CI so that it can configure prototype
 module "ci_access" {
   source              = "rancher/access/aws"
-  version             = "1.2.0"
+  version             = "2.1.1"
   vpc_name            = local.vpc_name # selects vpc, doesn't create
   skip_subnet         = true
   skip_security_group = true
