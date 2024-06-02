@@ -26,7 +26,7 @@ resource "random_uuid" "join_token" {}
 # generate a production server from golden image
 module "prod_access" {
   source              = "rancher/access/aws"
-  version             = "1.2.0"
+  version             = "2.2.1"
   owner               = local.owner    # tag objects with your contact info
   vpc_name            = local.vpc_name # select project vpc
   subnet_name         = local.name     # generate a subnet for the prod servers
